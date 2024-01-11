@@ -1,0 +1,14 @@
+name: copilot-gpt4-service
+version: latest
+slug: copilot-gpt4-service
+description: Convert Github Copilot to ChatGPT
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: true
+startup: services
+ports:
+  8080/tcp: null
+ports_description:
+  8080/tcp: OpenAI API interface (not required for Home Assistant integration)

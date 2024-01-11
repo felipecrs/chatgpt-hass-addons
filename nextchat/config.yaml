@@ -1,0 +1,18 @@
+name: NextChat
+version: latest
+slug: nextchat
+description: A well-designed cross-platform ChatGPT web UI, with GPT3, GPT4 & Gemini Pro support
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: true
+ports:
+  3000/tcp: null
+ports_description:
+  3000/tcp: Web interface (not required for Home Assistant ingress)
+ingress: true
+ingress_port: 3000
+ingress_stream: true
+panel_icon: mdi:chat
+panel_title: NextChat
